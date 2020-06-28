@@ -4,11 +4,44 @@
 <title>Marksheet</title>
 </head>
 
+<style>
+	table {outline-color: yellow;}
+
+	table.groove{
+		outline-style: groove;
+		outline-width: 4px;
+	}
+
+	#overall{
+		color: blue ;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	#good{
+		background-color: #cce5ff;
+	}
+
+	.center {
+  		padding-left: 100px;
+  		color: brown;
+  	}
+
+  	.alignright{
+  		text-align: right;
+  	}
+
+  	.alignleft{
+  		text-align: left;
+  	}
+  	tr:nth-child(even) {background-color: #e8daef;}
+</style>
+
 <body>
 
-<h2>Marksheet</h2>
+<h2 class="center">Marksheet</h2>
 
-<table>
+<table class="groove">
 	<tr>
 		<th>S.NO</th>
 		<th>SUBJECT</th>
@@ -17,57 +50,57 @@
 	</tr>
 	<tr>
 		<td>1.</td>
-		<td>Basic Electronics</td>
-		<td>2</td>
-		<td>A+</td>
+		<td class="alignleft">Basic Electronics</td>
+		<td class="alignright">2</td>
+		<td class="alignright">A+</td>
 	</tr>
 	<tr>
 		<td>2.</td>
-		<td>Computer Architechture and Microprocessor</td>
-		<td>3</td>
-		<td>O</td>
+		<td class="alignleft">Computer Architechture and Microprocessor</td>
+		<td class="alignright">3</td>
+		<td  class="alignright" id="good">O</td>
 	</tr>
 	<tr>
 		<td>3.</td>
-		<td>Database Management Systems</td>
-		<td>3</td>
-		<td>O</td>
+		<td class="alignleft">Database Management Systems</td>
+		<td class="alignright">3</td>
+		<td class="alignright" id="good">O</td>
 	</tr>
 	<tr>
 		<td>4.</td>
-		<td>Indian Constitution</td>
-		<td>1</td>
-		<td>A++</td>
+		<td class="alignleft">Indian Constitution</td>
+		<td class="alignright">1</td>
+		<td class="alignright">A++</td>
 	</tr>
 	<tr>
 		<td>5.</td>
-		<td>Probability and Statistics</td>
-		<td>2</td>
-		<td>A++</td>
+		<td class="alignleft">Probability and Statistics</td>
+		<td class="alignright">2</td>
+		<td class="alignright">A++</td>
 	</tr>
 	<tr>
 		<td>6.</td>
-		<td>Basic Electronics Lab</td>
-		<td>2</td>
-		<td>A+</td>
+		<td class="alignleft">Basic Electronics Lab</td>
+		<td class="alignright">2</td>
+		<td class="alignright">A+</td>
 	</tr>
 	<tr>
 		<td>7.</td>
-		<td>DBMS Lab</td>
-		<td>2</td>
-		<td>O</td>
+		<td class="alignleft">DBMS Lab</td>
+		<td class="alignright">2</td>
+		<td class="alignright" id="good">O</td>
 	</tr>
 	<tr>
 		<td>8.</td>
-		<td>Computer Architechture Lab</td>
-		<td>2</td>
-		<td>O</td>
+		<td class="alignleft">Computer Architechture Lab</td>
+		<td class="alignright">2</td>
+		<td  class="alignright" id="good">O</td>
 	</tr>
-	<tr>
+	<tr id="overall">
 		<td></td>
 		<td>TOTAL:</td>
-		<td>17</td>
-		<td>O</td>
+		<td class="alignright">17</td>
+		<td class="alignright" id="good">O</td>
 	</tr>
 </table>
 <style>

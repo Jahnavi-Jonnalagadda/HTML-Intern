@@ -3,27 +3,79 @@
 
 <head>
 <title>Courses</title>
+<style>
+	a:link {
+  color: pink;
+  background-color: blue;
+}
+
+
+a:visited {
+  color: green;
+  background-color: cyan;
+}
+
+
+a:hover {
+  color: darkblue;
+  background-color: hotpink;
+}
+
+a:active {
+  color: blue;
+  background-color: hotpink;
+}
+ol {
+  background: #cce5ff;
+  padding: 20px;
+}
+
+ul.a{
+	list-style-type: circle;
+}
+ul.b{
+	list-style-type: square;
+
+}
+ul.c{
+	list-style-type: disc;
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+</style>
 </head>
 
 <body>
 
-<h2>My Courses</h2>
+<div>
+	<h2>My Courses</h2>
+	<img src="cloud.png" width="300" height="68">
 
-<ol>
-	<li>Machine Learning</li>
-	<ul>
-		<li>Linear Regression</li>
-		<li>Data Mining</li>
+</div>
+
+<ol style="color: #800000">
+	<li><span style="color: black">Machine Learning</span></li>
+	<ul class="a">
+		<li style="color: red"><span style="color: black">Linear Regression</span></li>
+		<li style="color: red"><span style="color: black">Data Mining</span></li>
 	</ul>
-	<li>Data Science</li>
-	<ul>
-		<li>Statistics</li>
-		<li>Linear Algebra</li>
+
+	<li><span style="color: black">Data Science</span></li>
+	<ul class="b">
+		<li style="color: green"><span style="color: black">Statistics</span></li>
+		<li style="color: green"><span style="color: black">Linear Algebra</span></li>
 	</ul>
-	<li>HTML</li>
-	<ul>
-		<li>Format Text</li>
-		<li>Add Graphics</li>
+
+	<li><span style="color: black">HTML</span></li>
+	<ul class="c">
+		<li style="color: blue"><span style="color: black">Format Text</span></li>
+		<li style="color: blue"><span style="color: black">Add Graphics</span></li>
 	</ul>
 </ol>
 
