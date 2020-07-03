@@ -17,19 +17,6 @@
         background-size: cover;
         color: white;
       }
-/*
-      div { 
-            width: 50%; 
-            height: 80px; 
-            padding: 20px; 
-            margin: 10px; 
-            border: 2px solid green; 
-            font-size: 30px; 
-        } 
-           
-        .b1 { 
-            margin: 10px; 
-        } */
 
     </style>
   </head>
@@ -218,6 +205,11 @@
             $(".show-btn").click(function(){
                 $("#dishid").show();
             });
+
+            // Toggle function
+            $(".toggle-btn").click(function(){
+                $("#dishid").toggle();
+            });
         });
     </script>
 
@@ -227,7 +219,8 @@
     </div> 
 
     <button style="margin-left: 70px" class="hide-btn" >Hide Me!</button>
-    <button style="margin-left: 70px" class="show-btn" >Show Me!</button> 
+    <button style="margin-left: 30px" class="show-btn" >Show Me!</button><br><br> 
+    <button style="margin-left: 120px" class="toggle-btn" >Toggle Me!</button>
 
     <p style="margin-bottom: 40px"></p>  
 

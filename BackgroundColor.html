@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	// fout() 
+	$(".fOut").click(function(){
+	$("p").fadeOut();
+	});
 
-<style>
-	img{
-		float:left;
-	}
+	// fin()
+	$(".fIn").click(function(){
+	$("p").fadeIn();
+	});
 
-	div {
-  		padding-top: 20px;
-  		padding-right: 20px;
-  		padding-bottom: 20px;
-  		padding-left: 20px;
-	}
-	h1{
-		color: darkblue;
-	}
-	.serif {
-  font-family: "Times New Roman", Times, serif;
-	}
-	p.italic {
-  font-style: italic;
-	}
+	// dbclick()
+	$("h2, p, button").dblclick(function(){
+	$(this).hide();
+	});
 
-	body{
-		background-color: pink;
-	}
-	
-</style>
-<body>
-	<div>
-		<img src="css.png" style="width:250px; height:100px; margin-right:15px";>
-		<h1><p class="serif">Getting Hands Dirty With CSS!!</p></h1>
-		<h2><p class="italic">CSS Tutorial</p></h2>
-</div>
+});
+</script>
+</head>
+<body style="background-color: #d7bde2; color: navy">
+
+<h1 style="margin-left: 200px; color: black"> Java Script libraries and frameworks</h1>
+<p style="font-size: 25px; padding-left: 100px"><b>Check Fade In and Fade Out</b></p>
+
+<button class="fOut" style="font-size: 18px; margin-left: 150px">Fade out</button>
+<button class="fIn" style="font-size: 18px; margin-left: 70px">Fade in</button>
+
+<h2 style="margin-left: 100px">Double Click</h2>
+<p style="margin-left: 100px; font-size: 20px">The .dblclick() method attaches an event handler to run after the double-click event occurs, or invokes the event.</p>
+
+
+
 </body>
 </html>
